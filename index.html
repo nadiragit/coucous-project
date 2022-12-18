@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Couscous</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+      color: darkgreen;
+    }
+    h2 {
+      text-align: center;
+      color: darkgreen;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    p {
+      display: block;
+      margin: 20px 0 10px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    .learn-more {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: green;
+      font-size: 14px;
+    }
+    .learn-more:hover {
+      text-decoration: underline;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      background: darkgreen;
+      color: white;
+      font-size: 18px;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+    .footer {
+      text-align: center;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 30px 60px;
+      background-color: rgb(225, 201, 169);
+      border-radius: 20px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    }
+    body {
+      background-color: rgb(53, 88, 76);
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1>What is Couscous?</h1>
+      <hr />
+      <h2>Have you ever had Couscous?</h2>
+      <hr />
+      <img
+        src="
+    
+
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/046/815/original/couscous.jpg?1664047275"
+        alt="Couscous"
+        width="300"
+      />
+      <p>
+        Contrary to popular belief, couscous is neither a grain nor a seed; it’s
+        a form of pasta made from a dry mixture of semolina and water that’s
+        rolled in very tiny irregular pieces. When couscous was made daily by
+        hand, a bowl of semolina was mixed and tossed while water was gradually
+        added and rubbed into the mixture. Traditionally handmade couscous is
+        steamed in a pot called a couscoussier and takes three individual
+        steamings to cook. This type of couscous is Moroccan couscous, named for
+        where it originated. It is the tiniest form of couscous and is what most
+        people think of as couscous.
+        <br />
+      </p>
+      <a
+        href="https://www.foodnetwork.com/how-to/packages/food-network-essentials/what-is-couscous"
+        target="-blank"
+        class="learn-more"
+      >
+        <br />
+        Learn more on Foodnetwork
+      </a>
+      <br />
+      <hr />
+
+      <p>
+        <strong>We made a book of COUSCOUS recepies! </strong>
+      </p>
+      <button class="get-Book">Get your copy Today</button>
+
+      <p class="footer">This page was built by Nadira Benhamida</p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let address = prompt("What is your address?");
+        let quantity = prompt("Enter quantity");
+
+        alert("Thank you " + name + "! we will send you your copy!");
+      }
+      let buyButton = document.querySelector(".get-Book");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
